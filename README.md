@@ -10,7 +10,7 @@ All in **`assets/site.js`** (the `SITE` block at the very top – read the comme
 |---|---|
 | **Turn the lesson popup on/off** | `popup.enabled: true` / `false` |
 | **Show a new poster** | Upload the new image to `assets/img/`, change `popup.image`, and change `popup.id` (so people who closed the old poster see the new one) |
-| Add / remove / rename a menu entry | Edit the `menu` list |
+| Add / remove / rename a menu entry | Edit the `menu` list (each top-level entry needs an `icon`; the available names are in the `ICON` list further down) |
 | Change address, hours, e-mail, phones | Edit the `footer` block |
 | Put an e-mail address in a page | Never type it as plain text. Use `<a class="obf-mail" href="#" data-u="name" data-d="example.gr">email</a>` (name = part before the @, data-d = domain). The address is only assembled after a visitor moves the mouse, touches the screen or presses a key, so harvesting bots do not see it. |
 
@@ -46,6 +46,10 @@ The lecture slides and quizzes now live in their own repository, [heraklionbridg
 python3 -m http.server 8000
 ```
 then open http://localhost:8000 (run it inside this folder).
+
+## Where it lives
+
+The repository is `heraklion-bridge/heraklion-bridge.github.io`, so GitHub Pages serves it at https://heraklion-bridge.github.io/ (from `main`, root). The look (left-hand menu, cards, light/dark theme) deliberately matches the learn and program sites.
 
 ## Publishing with GitHub Pages + your domain
 
